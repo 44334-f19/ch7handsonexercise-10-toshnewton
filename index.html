@@ -5,11 +5,6 @@
 <meta charset="utf-8">
 <style>
 	
-
-.flex-container {
-  display: flex;
-}
-	
 header, nav, main, footer, aside { display: block; }
 * { box-sizing: border-box;}
 body { margin:0;
@@ -17,7 +12,8 @@ body { margin:0;
 #container { background-color: #EEEEEE;
              color: #006600;
              min-width: 960px;
-             font-family: Verdana, Arial, sans-serif; }
+             font-family: Verdana, Arial, sans-serif;
+	     display: flex;}
 header { background-color: #636631;
          background-image: url(showybg.jpg);
          background-position: bottom;
@@ -72,14 +68,11 @@ aside h3 { padding-bottom: 2px;
 </style> 
 </head>
 <body>
-<div id="container" class="flex-container">
-  <div>
+<div id="container">
   <header>
     <span><a href="#content">Skip to Content</a></span>
 	  <h1>Door County Wildflowers</h1>
   </header>
-  </div>
-  <div>
   <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -90,8 +83,6 @@ aside h3 { padding-bottom: 2px;
    </ul>
    <img src="plsthumb.jpg" width="100" height="100" alt="Showy Lady Slipper">
  </nav>
- </div>
- <div>
  <aside>
    <h3>The Ridges</h3>
    <p class="news">The Ridges Nature Sanctuary offers wild orchid hikes during the summer months. For more info, visit <a href=
@@ -100,7 +91,6 @@ aside h3 { padding-bottom: 2px;
     <p class="news">The <a href="http://www.newportwildernesssociety.org">
 Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday. Stop by the park office to register.</p>
   </aside>
-  </div>
   <main id="content">
     <h2>Door County</h2>
     <p>Wisconsin&#39;s Door County Peninsula is ecologically diverse &mdash; upland and boreal forest, bogs, swamps, sand and rock beaches, limestone escarpments, and farmlands.</p>
@@ -112,6 +102,5 @@ Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday.
     </footer>
   </main>
 </div> 
-</div>
 </body>
 </html>

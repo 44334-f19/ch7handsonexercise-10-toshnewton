@@ -13,8 +13,11 @@ body { margin:0;
              color: #006600;
              min-width: 960px;
              font-family: Verdana, Arial, sans-serif;
+	     display: -webkit-flex;
 	     display: flex;
-	     flex-direction: column;
+	     -webkit-flex-direction:column;
+	     flex-direction:column;
+	     
 	      }
 header { background-color: #636631;
          background-image: url(showybg.jpg);
@@ -25,15 +28,18 @@ header { background-color: #636631;
          text-align: right;
          padding: 0 20px;
          border-bottom: 2px solid #000000; }		 
-nav {
-      width: 150px; }
-aside {
-        width: 200px; }
-main {
-	margin: 0 210px 0 160px;
-        padding: 1px 10px 20px 10px;
-        background-color: #FFFFFF;
-        color: #006600; }
+nav {    -webkit-flex:1; 
+	 flex:1;
+         width: 150px; }
+aside {  -webkit-flex:2; 
+	 flex:2;
+         width: 200px; }
+main {   -webkit-flex:7; 
+	 flex:7;
+	 margin: 0 210px 0 160px;
+         padding: 1px 10px 20px 10px;
+         background-color: #FFFFFF;
+         color: #006600; }
 footer { font-size: .70em;
          text-align: center;
          color: #006600;
